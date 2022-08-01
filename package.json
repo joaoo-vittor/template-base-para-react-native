@@ -8,7 +8,9 @@
     "web": "expo start --web",
     "eject": "expo eject",
     "test": "jest --passWithNoTests --no-cache --runInBand",
-    "test:watch": "npm test -- --watch"
+    "test:watch": "npm test -- --watch",
+    "prepare": "husky install && husky add .husky/pre-commit \"npx lint-staged\"",
+    "lint": "eslint 'src/**' --fix"
   },
   "dependencies": {
     "expo": "~45.0.0",
@@ -37,8 +39,11 @@
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.30.1",
     "eslint-plugin-react-native": "^4.0.0",
+    "git-commit-msg-linter": "^4.1.3",
+    "husky": "^8.0.1",
     "jest": "^27.5.1",
     "jest-expo": "^45.0.1",
+    "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "react-test-renderer": "^17.0.2",
     "ts-jest": "^27.1.5",

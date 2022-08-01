@@ -9,6 +9,7 @@
     "eject": "expo eject",
     "test": "jest --passWithNoTests --no-cache --runInBand",
     "test:watch": "npm test -- --watch",
+    "test:staged": "npm test -- --findRelatedTests",
     "prepare": "husky install && husky add .husky/pre-commit \"npx lint-staged\"",
     "lint": "eslint 'src/**' --fix"
   },

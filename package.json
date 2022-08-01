@@ -6,7 +6,9 @@
     "android": "expo run:android",
     "ios": "expo run:ios",
     "web": "expo start --web",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "test": "jest --passWithNoTests --no-cache --runInBand",
+    "test:watch": "npm test -- --watch"
   },
   "dependencies": {
     "expo": "~45.0.0",
@@ -19,8 +21,12 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
+    "@testing-library/jest-native": "^4.0.5",
+    "@testing-library/react-native": "^11.0.0",
+    "@types/jest": "^27.5.2",
     "@types/react": "~17.0.21",
     "@types/react-native": "~0.66.13",
+    "@types/react-test-renderer": "^17.0.2",
     "@typescript-eslint/eslint-plugin": "^5.31.0",
     "@typescript-eslint/parser": "^5.31.0",
     "eslint": "^8.20.0",
@@ -31,7 +37,11 @@
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.30.1",
     "eslint-plugin-react-native": "^4.0.0",
+    "jest": "^27.5.1",
+    "jest-expo": "^45.0.1",
     "prettier": "^2.7.1",
+    "react-test-renderer": "^17.0.2",
+    "ts-jest": "^27.1.5",
     "typescript": "~4.3.5"
   },
   "private": true
